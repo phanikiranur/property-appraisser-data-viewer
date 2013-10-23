@@ -1,0 +1,24 @@
+<div class="table-responsive">
+	<table class="table table-condensed table-striped">
+		<tr>
+			<th class="tableHeader" colspan="5">Addresses</th>
+		</tr>
+
+		<tr class="header-row">
+			<td>Address</td>
+			<td>Unit</td>
+			<td>City</td>
+			<td>Zip</td>
+			<td>Building</td>
+		</tr>
+
+		<tr ng-repeat="site in property.SiteAddress">
+			<td>{{site.StreetNumber}} {{site.StreetPrefix}} {{site.StreetName}} {{site.StreetSuffix}} {{site.StreetSuffixDirection}}</td>
+			<td>{{site.Unit}}</td>
+			<td>{{site.City}}</td>
+			<td>{{site.Zip}}</td>
+			<td>{{site.BuildingNumber}}</td>
+		</tr>
+
+	</table>
+</div>

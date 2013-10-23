@@ -1,0 +1,53 @@
+<div class="table-responsive">
+	<table class="table table-condensed table-striped">
+		<tr>
+			<th class="tableHeader" colspan="4">Assessment Information</th>
+		</tr>
+
+		<tr class="header-row">
+			<td>Year:</td>
+			<td>{{property.AssessmentInfo.AssessmentYearCurrent}}</td>
+			<td>{{property.AssessmentInfo.AssessmentYearPrior}}</td>
+			<td>{{property.AssessmentInfo.AssessmentYearTwoPrior}}</td>
+		</tr>
+
+		<tr>
+			<td><strong>Land Value:</strong></td>
+			<td>{{property.AssessmentInfo.LandValueCurrent
+			| currency:"$"}}</td>
+			<td>{{property.AssessmentInfo.LandValuePrior | currency:"$"}}</td>
+			<td>{{property.AssessmentInfo.LandValueTwoPrior
+			| currency:"$"}}</td>
+		</tr>
+
+		<tr>
+			<td><strong>Building Value:</strong></td>
+			<td>${{property.AssessmentInfo.BuildingValueCurrent
+			| currency:"$"}}</td>
+			<td>${{property.AssessmentInfo.BuildingValuePrior
+			| currency:"$"}}</td>
+			<td>${{property.AssessmentInfo.BuildingValueTwoPrior
+			| currency:"$"}}</td>
+		</tr>
+
+		<tr>
+			<td><strong>Market Value:</strong></td>
+			<td>${{property.AssessmentInfo.TotalValueCurrent
+			| currency:"$"}}</td>
+			<td>${{property.AssessmentInfo.TotalValuePrior
+			| currency:"$"}}</td>
+			<td>${{property.AssessmentInfo.TotalValueTwoPrior
+			| currency:"$"}}</td>
+		</tr>
+
+		<tr>
+			<td><strong>Assessed Value:</strong></td>
+			<td>${{property.AssessmentInfo.AssessedValueCurrent
+			| currency:"$"}}</td>
+			<td>${{property.AssessmentInfo.AssessedValuePrior
+			| currency:"$"}}</td>
+			<td>${{property.AssessmentInfo.AssessedValueTwoPrior
+			| currency:"$"}}</td>
+		</tr>
+	</table>
+</div>

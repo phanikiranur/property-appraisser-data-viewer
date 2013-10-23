@@ -1,0 +1,28 @@
+<div class="table-responsive">
+	<table class="table table-condensed table-striped">
+		<tr>
+			<th class="tableHeader" colspan="6">Extra Features</th>
+		</tr>
+
+		<tr class="header-row">
+			<td>Description</td>
+			<td>Year Built</td>
+			<td>Units</td>
+			<td>Use Code</td>
+			<td>Adj Unit Price</td>
+			<td>Depreciated Value</td>
+		</tr>
+
+		<tr ng-repeat="feature in property.ExtraFeatures | orderBy:'-ActualYearBuilt'">
+			<td>{{feature.Description}}</td>
+			<td>{{feature.ActualYearBuilt}}</td>
+			<td>{{feature.Units}}</td>
+			<td>{{feature.UseCode}}</td>
+			<td>{{feature.AdjustedUnitPrice
+			| currency:"$"}}</td>
+			<td>{{feature.DepreciatedValue
+			| currency:"$"}}</td>
+		</tr>
+
+	</table>
+</div>

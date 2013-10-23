@@ -1,0 +1,103 @@
+<div class="table-responsive">
+	<table class="table table-condensed table-striped">
+		<tr>
+			<th class="tableHeader" colspan="5">Benefits Information</th>
+		</tr>
+
+		<tr class="header-row">
+			<td>Benefit:</td>
+
+			<td>Type:</td>
+                        <td>{{property.ExemptionInfo.AssessmentYearCurrent}}</td>
+                        <td>{{property.ExemptionInfo.AssessmentYearPrior}}</td>
+                        <td>{{property.ExemptionInfo.AssessmentYearTwoPrior}}</td>
+
+		</tr>
+
+		<tr>
+			<td><strong>Save Our Homes:</strong></td>
+
+			<td>Assessment Reduction</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td><strong>Homestead:</strong></td>
+
+			<td>Exemption</td>
+                        <td>{{property.ExemptionInfo.HomesteadExValueCurrent
+			| currency:"$"}}</td>
+                        <td>{{property.ExemptionInfo.HomesteadExValuePrior
+			| currency:"$"}}</td>
+                        <td>{{property.ExemptionInfo.HomesteadExValueTwoPrior
+			| currency:"$"}}</td>
+		</tr>
+
+		<tr>
+			<td><strong>Second Homestead:</strong></td>
+
+			<td>Exemption</td>
+                        <td>{{property.ExemptionInfo.CountySecondHomesteadExValueCurrent
+			| currency:"$"}}</td>
+                        <td>{{property.ExemptionInfo.CountySecondHomesteadExValuePrior
+			| currency:"$"}}</td>
+                        <td>{{property.ExemptionInfo.CountySecondHomesteadExValueTwoPrior
+			| currency:"$"}}</td>
+		</tr>
+
+		<tr>
+			<td><strong>County Senior:</strong></td>
+
+			<td>Exemption</td>
+                        <td>{{property.ExemptionInfo.CountySeniorExValueCurrent
+			| currency:"$"}}</td>
+                        <td>{{property.ExemptionInfo.CountySeniorExValuePrior
+			| currency:"$"}}</td>
+                        <td>{{property.ExemptionInfo.CountySeniorExValueTwoPrior
+			| currency:"$"}}</td>
+		</tr>
+
+		<tr>
+			<td><strong>Disabled:</strong></td>
+
+			<td>Exemption</td>
+                        <td>{{property.ExemptionInfo.DisabledExValueCurrent
+			| currency:"$"}}</td>
+                        <td>{{property.ExemptionInfo.DisabledExValuePrior
+			| currency:"$"}}</td>
+                        <td>{{property.ExemptionInfo.DisabledExValueTwoPrior
+			| currency:"$"}}</td>
+		</tr>
+
+		<tr>
+			<td><strong>Veteran:</strong></td>
+
+			<td>Exemption</td>
+                        <td>{{property.ExemptionInfo.VeteranExValueCurrent
+			| currency:"$"}}</td>
+                        <td>{{property.ExemptionInfo.VeteranExValuePrior
+			| currency:"$"}}</td>
+                        <td>{{property.ExemptionInfo.VeteranExValueTwoPrior
+			| currency:"$"}}</td>
+		</tr>
+
+		<tr>
+			<td><strong>Widow:</strong></td>
+
+			<td>Exemption</td>
+                        <td>{{property.ExemptionInfo.WidowExValueCurrent
+			| currency:"$"}}</td>
+                        <td>{{property.ExemptionInfo.WidowExValuePrior
+			| currency:"$"}}</td>
+                        <td>{{property.ExemptionInfo.WidowExValueTwoPrior
+			| currency:"$"}}</td>
+		</tr>
+
+		<tr>
+			<td colspan="5">Note: Not all benefits are applicable to all
+				Taxable Values (ie Couty, School Board, City, Regional).</td>
+		</tr>
+	</table>
+</div>

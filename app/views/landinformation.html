@@ -1,0 +1,34 @@
+<div class="table-responsive">
+	<table class="table table-condensed table-striped">
+		<tr>
+			<th class="tableHeader" colspan="9">Land Information</th>
+		</tr>
+
+		<tr class="header-row">
+			<td>Muni Zone</td>
+			<td>Zone</td>
+			<td>Land Use</td>
+			<td>Unit Type</td>
+			<td>Use Code</td>
+			<td>Total Adj</td>
+			<td>Units</td>
+			<td>Adj Unit Price</td>
+			<td>Calc Value</td>
+		</tr>
+
+		<tr ng-repeat="land in property.LandCInfos">
+			<td>{{land.MuniZone}}</td>
+			<td>{{land.Zone}}</td>
+			<td>{{land.LandUse}}</td>
+			<td>{{land.UnitType}}</td>
+			<td>{{land.UseCode}}</td>
+			<td>{{land.TotalAdjustments}}</td>
+			<td>{{land.Units}}</td>
+			<td>{{land.AdjustedUnitPrice
+			| currency:"$"}}</td>
+			<td>{{land.CalculatedValue
+			| currency:"$"}}</td>
+		</tr>
+
+	</table>
+</div>

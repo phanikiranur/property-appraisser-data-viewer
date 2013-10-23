@@ -1,0 +1,26 @@
+<div class="table-responsive">
+	<table class="table table-condensed table-striped">
+		<tr>
+			<th class="tableHeader" colspan="5">Owners' Information</th>
+		</tr>
+
+		<tr class="header-row">
+			<td>Name</td>
+		<!--	<td>Description</td> -->
+			<td>Role</td>
+			<td>% Own</td>
+			<td>Married</td>
+			<td>Tenancy</td>
+		</tr>
+
+		<tr ng-repeat="owner in property.OwnerInfos">
+			<td>{{owner.Name}}</td>
+		<!--	<td>{{owner.Description}}</td> -->
+			<td>{{owner.Role}}</td>
+			<td>{{owner.PercentageOwn}}</td>
+			<td>{{owner.MarriedFlag}}</td>
+			<td>{{owner.TenancyCd}}</td>
+		</tr>
+
+	</table>
+</div>

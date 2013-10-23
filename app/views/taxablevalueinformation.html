@@ -1,0 +1,100 @@
+<div class="table-responsive">
+	<table class="table table-condensed table-striped">
+		<tr>
+			<th class="tableHeader" colspan="4">Taxable Value Information</th>
+		</tr>
+
+		<tr class="header-row taxable">
+			<td>&nbsp;</td>
+
+			<td>Exemption/<br> Taxable Value
+			</td>
+
+			<td>Exemption/<br> Taxable Value
+			</td>
+
+			<td>Exemption/<br> Taxable Value
+			</td>
+		</tr>
+
+		<tr>
+			<td><strong>County:</strong></td>
+
+			<td>{{property.AssessmentInfo.CountyExemptionValueCurrent
+                          | currency:"$"}} 
+                          /
+                          {{property.AssessmentInfo.CountyTaxableValueCurrent
+                          | currency:"$"}}</td>
+			<td>${{property.AssessmentInfo.CountyExemptionValuePrior
+                          | currency:"$"}} 
+                          /
+                          {{property.AssessmentInfo.CountyTaxableValuePrior
+                          | currency:"$"}}</td>
+			<td>${{property.AssessmentInfo.CountyExemptionValueTwoPrior
+                          | currency:"$"}} 
+                          /
+                          {{property.AssessmentInfo.CountyTaxableValueTwoPrior
+                          | currency:"$"}}</td>
+		</tr>
+
+		<tr>
+			<td><strong>School Board:</strong></td>
+			<td>{{property.AssessmentInfo.SchoolExemptionValueCurrent
+                          | currency:"$"}} 
+                          /
+                          {{property.AssessmentInfo.SchoolTaxableValueCurrent
+                          | currency:"$"}}</td>
+			<td>{{property.AssessmentInfo.SchoolExemptionValuePrior
+                          | currency:"$"}} 
+                          /
+                          {{property.AssessmentInfo.SchoolTaxableValuePrior
+                          | currency:"$"}}</td>
+			<td>{{property.AssessmentInfo.SchoolExemptionValueTwoPrior
+                          | currency:"$"}} 
+                          /
+                          {{property.AssessmentInfo.SchoolTaxableValueTwoPrior
+                          | currency:"$"}}</td>
+
+		</tr>
+
+		<tr>
+			<td><strong>City:</strong></td>
+			<td>{{property.AssessmentInfo.CityExemptionValueCurrent
+                          | currency:"$"}} 
+                          /
+                          {{property.AssessmentInfo.CityTaxableValueCurrent
+                          | currency:"$"}}</td>
+			<td>{{property.AssessmentInfo.CityExemptionValuePrior
+                          | currency:"$"}} 
+                          /
+                          {{property.AssessmentInfo.CityTaxableValuePrior
+                          | currency:"$"}}</td>
+			<td>{{property.AssessmentInfo.CityExemptionValueTwoPrior
+                          | currency:"$"}} 
+                          /
+                          {{property.AssessmentInfo.CityTaxableValueTwoPrior
+                          | currency:"$"}}</td>
+
+		</tr>
+
+		<tr>
+			<td><strong>Regional:</strong></td>
+			<td>{{property.AssessmentInfo.RegionalExemptionValueCurrent
+                          | currency:"$"}} 
+                          /
+                          {{property.AssessmentInfo.RegionalTaxableValueCurrent
+                          | currency:"$"}}</td>
+			<td>{{property.AssessmentInfo.RegionalExemptionValuePrior
+                          | currency:"$"}} 
+                          /
+                          {{property.AssessmentInfo.RegionalTaxableValuePrior
+                          | currency:"$"}}</td>
+			<td>{{property.AssessmentInfo.RegionalExemptionValueTwoPrior
+                          | currency:"$"}} 
+                          /
+                          {{property.AssessmentInfo.RegionalTaxableValueTwoPrior
+                          | currency:"$"}}</td>
+
+		</tr>
+	</table>
+</div>
